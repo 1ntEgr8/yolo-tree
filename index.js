@@ -59,6 +59,7 @@ function buildTree(links, yolo = true) {
   }
   const tree = document.createElement(tag);
   for (const key in links) {
+    if (key === "icon") continue;
     const leaf = document.createElement("li");
     const value = links[key];
     if (typeof value === "object") {
