@@ -29,7 +29,7 @@ customElements.define("yolo-tree", YoloTree);
 const app = document.getElementById("app");
 
 async function fetchLinks() {
-  const result = await fetch("/links.json");
+  const result = await fetch("./links.json");
   const data = await result.json();
   return data;
 }
