@@ -1,0 +1,19 @@
+{
+  "facebook": "https://www.facebook.com",
+  "instagram": {
+    "icon": "https://placekitten.com/g/200/300",
+    "account 1": {
+      "link": "https://www.example.com",
+      "icon": "https://placekitten.com/g/200/300"
+    },
+    "account 2": {
+      "link": "https://www.example.com",
+      "icon": "https://placekitten.com/g/200/300"
+    },
+    "account 3": "https://www.example.com"
+  },
+  "twitter": {
+    "link": "https://www.example.com",
+    "icon": "https://placekitten.com/g/200/300"
+  }
+}

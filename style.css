@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+main {
+  width: 400px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.plump {
+  padding: 10px;
+}
+
+yolo-tree {
+  list-style: none;
+  padding-left: 0px;
+  font-weight: bold;
+  color: black;
+}
+
+yolo-tree ul {
+  list-style: none;
+  width: 100%;
+}
+
+yolo-tree li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 4px;
+  background: #00d9ff;
+  border: 2px solid black;
+  transition: background 0.15s ease-out;
+  min-height: 60px;
+  cursor: pointer;
+}
+
+yolo-tree li a {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  color: inherit;
+}
+
+yolo-tree li a:visited {
+  color: inherit;
+}
+
+yolo-tree li:hover {
+  background: #91efff;
+}
+
+yolo-tree li .icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 8px;
+  border: 1px solid black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #212121;
+  }
+
+  h1 {
+    color: white;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  main {
+    width: 200px;
+  }
+}
