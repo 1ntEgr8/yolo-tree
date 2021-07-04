@@ -43,7 +43,7 @@ function makeLink(txt, href) {
 }
 
 function makeIcon(txt, src) {
-  const icon = document.createElement("img"); 
+  const icon = document.createElement("img");
   icon.src = src;
   icon.alt = txt;
   icon.classList.add("icon");
@@ -65,17 +65,14 @@ function buildTree(links, yolo = true) {
     if (typeof value === "object") {
       if (value.link) {
         leaf.appendChild(makeLink(key, value.link));
-        if (value.icon) {
-          leaf.appendChild(makeIcon(key, value.icon));
-        }
       } else {
         leaf.innerHTML = key;
         leaf.classList.add("plump");
         const subtree = buildTree(links[key], false);
         leaf.appendChild(subtree);
-        if (value.icon) {
-          leaf.appendChild(makeIcon(key, value.icon));
-        }
+      }
+      if (value.icon) {
+        leaf.appendChild(makeIcon(key, value.icon));
       }
     } else {
       leaf.appendChild(makeLink(key, value));
