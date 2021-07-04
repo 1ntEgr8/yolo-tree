@@ -1,19 +1,20 @@
 {
-  "facebook": "https://www.facebook.com",
+  "facebook": {
+    "icon": "./assets/facebook.svg",
+    "link": "https://www.facebook.com"
+  },
   "instagram": {
-    "icon": "https://placekitten.com/g/200/300",
-    "account 1": {
-      "link": "https://www.example.com",
-      "icon": "https://placekitten.com/g/200/300"
-    },
-    "account 2": {
-      "link": "https://www.example.com",
-      "icon": "https://placekitten.com/g/200/300"
-    },
-    "account 3": "https://www.example.com"
+    "icon": "./assets/instagram.svg",
+    "account 1": "https://1ntegr8.github.io/pronkz/",
+    "account 2": "https://1ntegr8.github.io/pronkz/",
+    "account 3": "https://1ntegr8.github.io/pronkz/"
   },
   "twitter": {
-    "link": "https://www.example.com",
-    "icon": "https://placekitten.com/g/200/300"
+    "link": "https://www.twitter.com",
+    "icon": "./assets/twitter.svg"
+  },
+  "github": {
+    "link": "https://www.github.com",
+    "icon": "./assets/github.svg"
   }
 }

@@ -74,7 +74,6 @@ yolo-tree li .icon {
   transform: translateY(-50%);
   top: 50%;
   left: 8px;
-  border: 1px solid black;
 }
 
 @media (prefers-color-scheme: dark) {
