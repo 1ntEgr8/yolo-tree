@@ -15,9 +15,10 @@ class YoloTree extends HTMLElement {
       const subtree = leaf.querySelector("ul");
       if (subtree !== null) {
         leaf.addEventListener("click", (e) => {
-          e.preventDefault();
           e.stopPropagation();
-          subtree.classList.toggle("hide");
+          if (e.target === leaf) {
+            subtree.classList.toggle("hide");
+          }
         });
       }
     }
